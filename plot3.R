@@ -1,4 +1,5 @@
 #Exploratory-Data-Analysis
+
 #Homework Week 1
 
 #Plot 3
@@ -24,7 +25,10 @@ plot3 = function() {
   axis(1, at=c(0, total_rows / 2, total_rows ), lab=c("Thu", "Fri", "Sat"))
   axis(2,at=c(0,10,20,30,40))
   
-  legend("topright",c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), col=c("black","blue","red"), lty=1)
+  legend("topright",
+         c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), 
+         col=c("black","blue","red"), 
+         lty='solid')
   
   title(ylab="Energy sub metering")
   box() 
